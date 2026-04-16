@@ -1,0 +1,86 @@
+.register-body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2F80ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+}
+
+.register-card h2 {
+    margin: 0;
+}
+
+.logo {
+    color: #2F80ED;
+    margin: 5px 0;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 12px;
+}
+
+.register-card input,
+.register-card .select-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.register-card button {
+    width: 100%;
+    padding: 12px;
+    background: #2F80ED;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.register-card button:hover {
+    background: #1c60c7;
+}
+
+.login-text {
+    font-size: 12px;
+    text-align: right;
+}
+
+.login-text a {
+    color: #2F80ED;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+a:hover {
+    color: #c0392b;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    margin: 0 5px;
+}

@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #1e1e1e;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 230px;
+    background: #f5f5f5;
+    height: 110vh;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.logo span {
+    color: #3498db;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+}
+
+.menu a.active {
+    background: #cfe6f3;
+}
+
+.menu a:hover {
+    background: #e3f2fd;
+}
+
+.main {
+    flex: 1;
+    padding: 30px;
+    background: #eaeaea;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-bar h2 {
+    margin: 0;
+}
+
+.logout {
+    text-decoration: none;
+    background: #ff6b6b;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.card {
+    background: #dcdcdc;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+input, textarea, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.btn-setujui, .btn-tolak {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin: 0 2px;
+}
+
+.btn-setujui {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-setujui:hover {
+    background: #219a52;
+}
+
+.btn-tolak {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-tolak:hover {
+    background: #c0392b;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    background: white;
+    border-radius: 8px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+}
+
+th {
+    background: #ddd;
+    font-weight: 600;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.disetujui {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status.ditolak {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.aksi {
+    white-space: nowrap;
+}
+
+img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 6px;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+a:hover {
+    color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .main {
+        padding: 20px;
+    }
+}
