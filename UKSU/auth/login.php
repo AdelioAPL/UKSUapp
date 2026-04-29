@@ -18,6 +18,8 @@
     if($password == $hashed_password) {
         $_SESSION['id_user'] = $id_user;
         $_SESSION['role'] = $role;
+        $_SESSION['id_siswa'] = $row['id_siswa'];
+        $_SESSION['nama'] = $row['nama'];
 
         if ($role == 'admin') {
             header("Location: ../admin/dashboard.php");
@@ -28,7 +30,9 @@
     } else {
     $error = "Username / Password salah!";
     }
+
     }
+    
 ?>
 
 

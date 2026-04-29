@@ -49,7 +49,7 @@ $data = mysqli_query($conn, "SELECT * FROM obat");
 <body>
 
 <div class="container">
-    <div class="sidebar">
+    <nav class="sidebar">
         <div class="logo">
             UK<span>SU</span>
         </div>
@@ -60,7 +60,7 @@ $data = mysqli_query($conn, "SELECT * FROM obat");
             <a href="request.php">Request Obat</a>
             <a href="pengambilan.php">Pengambilan & Riwayat</a>
         </div>
-    </div>
+</nav>
 
     <div class="main">
 

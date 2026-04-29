@@ -31,122 +31,16 @@ if($kelas != ''){
 <html>
 <head>
     <title>Dashboard Admin</title>
-
     <!-- FONT POPPINS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: #1e1e1e;
-        }
-
-        .container {
-            display: flex;
-        }
-
-        .sidebar {
-            width: 230px;
-            background: #f5f5f5;
-            height: 100vh;
-            padding: 20px;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-
-        .logo span {
-            color: #3498db;
-        }
-
-        .menu a {
-            display: block;
-            padding: 10px;
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: black;
-            border-radius: 8px;
-        }
-
-        .menu a.active {
-            background: #cfe6f3;
-        }
-
-        .menu a:hover {
-            background: #e3f2fd;
-        }
-
-        .main {
-            flex: 1;
-            padding: 30px;
-            background: #eaeaea;
-        }
-
-        .top-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .card {
-            background: #dcdcdc;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 15px;
-        }
-
-        table {
-            width: 100%;
-            margin-top: 10px;
-            background: white;
-            border-radius: 8px;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 10px;
-        }
-
-        th {
-            background: #ddd;
-        }
-
-        select, button {
-            padding: 6px;
-            margin-top: 10px;
-        }
-
-        .logout {
-            text-decoration: none;
-            background: #ff6b6b;
-            color: white;
-            padding: 8px 12px;
-            border-radius: 6px;
-        }
-
-        a:hover {
-            color: #c0392b;
-        }
-
-        a {
-            color: #e74c3c;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="../assets/dashboardadmin.css">
 </head>
 <body>
 
 <div class="container">
 
     <!-- SIDEBAR -->
-    <div class="sidebar">
+    <nav class="sidebar">
         <div class="logo">
             UK<span>SU</span>
         </div>
@@ -157,7 +51,7 @@ if($kelas != ''){
             <a href="request.php">Request Obat</a>
             <a href="pengambilan.php">Pengambilan & Riwayat</a>
         </div>
-    </div>
+    </nav>
 
     <!-- MAIN -->
     <div class="main">
